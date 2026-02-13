@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Account List">
+        <template if:true={accounts}>
+            <lightning-datatable
+                key-field="Id"
+                data={accounts}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error">Error loading accounts: {error.message}</p>
+        </template>
+    </lightning-card>
+</template>
