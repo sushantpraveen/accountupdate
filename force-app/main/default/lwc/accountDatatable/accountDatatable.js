@@ -4,7 +4,8 @@ import getAccounts from '@salesforce/apex/AccountController.getAccounts';
 const COLUMNS = [
     { label: 'Name', fieldName: 'Name' },
     { label: 'Industry', fieldName: 'Industry' },
-    { label: 'Phone', fieldName: 'Phone' }
+    { label: 'Phone', fieldName: 'Phone' },
+    { label: 'Email', fieldName: 'Email' }
 ];
 
 export default class AccountDatatable extends LightningElement {
